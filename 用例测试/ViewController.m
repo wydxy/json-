@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UserModel.h"
 
 @interface ViewController ()
 
@@ -16,12 +17,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"my" ofType:@"json"];
+    NSString *jsonString = [[NSString alloc] initWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+    UserModel *model = [UserModel makeDataModelByJson:jsonString];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 20, self.view.bounds.size.width, 400)];
+//    label.backgroundColor = [UIColor redColor];
+    label.numberOfLines = 0;
+    [self.view addSubview:label];
+    label.text = [NSString stringWithFormat:@"json数据装换成UserModel数据如下:\n\n%@",model];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

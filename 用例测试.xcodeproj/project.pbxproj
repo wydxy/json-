@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F5631321B637800003B4AD7 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F5631311B637800003B4AD7 /* UserModel.m */; };
+		2F5631351B637B95003B4AD7 /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F5631341B637B95003B4AD7 /* test.json */; };
+		2F5631371B637C13003B4AD7 /* my.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F5631361B637C13003B4AD7 /* my.json */; };
 		2F82DF061B6341000069A8EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F82DF051B6341000069A8EB /* main.m */; };
 		2F82DF091B6341000069A8EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F82DF081B6341000069A8EB /* AppDelegate.m */; };
 		2F82DF0C1B6341000069A8EB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F82DF0B1B6341000069A8EB /* ViewController.m */; };
@@ -14,6 +17,7 @@
 		2F82DF111B6341000069A8EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F82DF101B6341000069A8EB /* Images.xcassets */; };
 		2F82DF141B6341000069A8EB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F82DF121B6341000069A8EB /* LaunchScreen.xib */; };
 		2F82DF201B6341000069A8EB /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F82DF1F1B6341000069A8EB /* ____Tests.m */; };
+		2F82DF2C1B6342CD0069A8EB /* BaseDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F82DF2B1B6342CD0069A8EB /* BaseDataModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F5631301B637800003B4AD7 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		2F5631311B637800003B4AD7 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		2F5631341B637B95003B4AD7 /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
+		2F5631361B637C13003B4AD7 /* my.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = my.json; sourceTree = "<group>"; };
 		2F82DF001B6341000069A8EB /* 用例测试.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "用例测试.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F82DF041B6341000069A8EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F82DF051B6341000069A8EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +48,8 @@
 		2F82DF191B6341000069A8EB /* 用例测试Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "用例测试Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F82DF1E1B6341000069A8EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F82DF1F1B6341000069A8EB /* ____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____Tests.m"; sourceTree = "<group>"; };
+		2F82DF2A1B6342CD0069A8EB /* BaseDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDataModel.h; sourceTree = "<group>"; };
+		2F82DF2B1B6342CD0069A8EB /* BaseDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDataModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +91,8 @@
 		2F82DF021B6341000069A8EB /* 用例测试 */ = {
 			isa = PBXGroup;
 			children = (
+				2F5631341B637B95003B4AD7 /* test.json */,
+				2F82DF291B6342AA0069A8EB /* DataModel */,
 				2F82DF071B6341000069A8EB /* AppDelegate.h */,
 				2F82DF081B6341000069A8EB /* AppDelegate.m */,
 				2F82DF0A1B6341000069A8EB /* ViewController.h */,
@@ -89,6 +101,7 @@
 				2F82DF101B6341000069A8EB /* Images.xcassets */,
 				2F82DF121B6341000069A8EB /* LaunchScreen.xib */,
 				2F82DF031B6341000069A8EB /* Supporting Files */,
+				2F5631361B637C13003B4AD7 /* my.json */,
 			);
 			path = "用例测试";
 			sourceTree = "<group>";
@@ -117,6 +130,17 @@
 				2F82DF1E1B6341000069A8EB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2F82DF291B6342AA0069A8EB /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				2F82DF2A1B6342CD0069A8EB /* BaseDataModel.h */,
+				2F82DF2B1B6342CD0069A8EB /* BaseDataModel.m */,
+				2F5631301B637800003B4AD7 /* UserModel.h */,
+				2F5631311B637800003B4AD7 /* UserModel.m */,
+			);
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +224,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F82DF0F1B6341000069A8EB /* Main.storyboard in Resources */,
+				2F5631371B637C13003B4AD7 /* my.json in Resources */,
+				2F5631351B637B95003B4AD7 /* test.json in Resources */,
 				2F82DF141B6341000069A8EB /* LaunchScreen.xib in Resources */,
 				2F82DF111B6341000069A8EB /* Images.xcassets in Resources */,
 			);
@@ -220,8 +246,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F82DF0C1B6341000069A8EB /* ViewController.m in Sources */,
+				2F5631321B637800003B4AD7 /* UserModel.m in Sources */,
 				2F82DF091B6341000069A8EB /* AppDelegate.m in Sources */,
 				2F82DF061B6341000069A8EB /* main.m in Sources */,
+				2F82DF2C1B6342CD0069A8EB /* BaseDataModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +444,7 @@
 				2F82DF251B6341000069A8EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2F82DF261B6341000069A8EB /* Build configuration list for PBXNativeTarget "用例测试Tests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +453,7 @@
 				2F82DF281B6341000069A8EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
